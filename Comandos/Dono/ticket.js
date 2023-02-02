@@ -19,7 +19,7 @@ module.exports = {
          Sábado: 12h às 18h
          Domingo e Feriados: Fechado**`)
         .setImage(
-            "https://cdn.discordapp.com/attachments/964165018612539503/1026642615661240330/ezgif.com-gif-maker.gif"
+            "https://media.discordapp.net/attachments/901945232529162250/1070566557375266836/BANNER-2-400X100.png"
           );
 
         let painel = new Discord.ActionRowBuilder().addComponents(

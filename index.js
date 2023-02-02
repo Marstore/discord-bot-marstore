@@ -155,7 +155,7 @@ client.on("interactionCreate", (interaction) => {
           // Nova opção
   
           let nome = `📦|${interaction.user.username}`;
-          let categoria = "1029558844541653092" // Coloque o ID da categoria
+          let categoria = "1000568416878465146" // Coloque o ID da categoria
   
           if (!interaction.guild.channels.cache.get(categoria)) categoria = null;
   
@@ -196,7 +196,7 @@ client.on("interactionCreate", (interaction) => {
               `Olá \`${interaction.user.username}\`, \`Boas vindas ao seu ticket.\`\nAguarde alguns instantes para receber o suporte.\n\n**Feche seu ticket no Botao Abaixo**\.`
             )
             .setImage(
-              "https://cdn.discordapp.com/attachments/964165018612539503/1026642615661240330/ezgif.com-gif-maker.gif"
+              "https://media.discordapp.net/attachments/901945232529162250/1070566557375266836/BANNER-2-400X100.png"
             );
             let botao = new Discord.ActionRowBuilder().addComponents(
               new Discord.ButtonBuilder()
@@ -219,7 +219,7 @@ client.on("interactionCreate", (interaction) => {
           // Nova opção
   
           let nome = `📦|${interaction.user.username}`;
-          let categoria = "1038588100349272175" // Coloque o ID da categoria
+          let categoria = "1000568416878465146" // Coloque o ID da categoria
   
           if (!interaction.guild.channels.cache.get(categoria)) categoria = null;
   
@@ -260,7 +260,7 @@ client.on("interactionCreate", (interaction) => {
               `Olá \`${interaction.user.username}\`, \`Boas vindas ao seu ticket.\`\nAguarde alguns instantes para receber o suporte.\n\n**Feche seu ticket no Botao Abaixo**\.`
             )
             .setImage(
-              "https://cdn.discordapp.com/attachments/964165018612539503/1026642615661240330/ezgif.com-gif-maker.gif"
+              "https://media.discordapp.net/attachments/901945232529162250/1070566557375266836/BANNER-2-400X100.png"
             );
             let botao = new Discord.ActionRowBuilder().addComponents(
               new Discord.ButtonBuilder()
@@ -283,7 +283,7 @@ client.on("interactionCreate", (interaction) => {
           // Nova opção
   
           let nome = `📦|${interaction.user.username}`;
-          let categoria = "1029558907615588413" // Coloque o ID da categoria
+          let categoria = "1000568416878465146" // Coloque o ID da categoria
   
           if (!interaction.guild.channels.cache.get(categoria)) categoria = null;
   
@@ -324,7 +324,7 @@ client.on("interactionCreate", (interaction) => {
               `Olá \`${interaction.user.username}\`, \`Boas vindas ao seu ticket.\`\nAguarde alguns instantes para receber o suporte.\n\n**Feche seu ticket no Botao Abaixo**\.`
             )
             .setImage(
-              "https://cdn.discordapp.com/attachments/964165018612539503/1026642615661240330/ezgif.com-gif-maker.gif"
+              "https://media.discordapp.net/attachments/901945232529162250/1070566557375266836/BANNER-2-400X100.png"
             );
             let botao = new Discord.ActionRowBuilder().addComponents(
               new Discord.ButtonBuilder()
