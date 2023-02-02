@@ -12,12 +12,12 @@ module.exports = {
     let embed_1 = new Discord.EmbedBuilder()
     .setAuthor({ name: client.user.username, iconURL: client.user.displayAvatarURL({ dynamic: true }) })
     .setDescription(`Olá ${interaction.user}, meu ping está em \`calculando...\`.`)
-    .setColor("Random");
+    .setColor("Blue");
 
     let embed_2 = new Discord.EmbedBuilder()
     .setAuthor({ name: client.user.username, iconURL: client.user.displayAvatarURL({ dynamic: true }) })
     .setDescription(`Olá ${interaction.user}, meu ping está em \`${ping}ms\`.`)
-    .setColor("Random");
+    .setColor("Blue");
 
     interaction.reply({ embeds: [embed_1] }).then( () => {
         setTimeout( () => {

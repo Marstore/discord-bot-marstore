@@ -37,7 +37,7 @@ module.exports = {
 
 
             let ryan = new Discord.EmbedBuilder()
-                .setColor("Green")
+                .setColor("Blue")
                 .setDescription(`
             **Status Updated**
             Ola ${interaction.user},

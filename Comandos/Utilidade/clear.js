@@ -22,7 +22,7 @@ module.exports = {
     run: async (client, interaction) => {
         let amount = interaction.options.getInteger("quantidade");
         let User = interaction.options.getUser("usuario");
-        let Response = new EmbedBuilder().setColor('Green');
+        let Response = new EmbedBuilder().setColor('Blue');
 
         const Messages = await interaction.channel.messages.fetch();
 

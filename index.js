@@ -70,7 +70,7 @@ client.login(config.token)
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 client.on('messageDelete', async (message) => {
 
-    const canalLogs = message.guild.channels.cache.get("1029445429080895498") // ID DO CANAL DE LOGS
+    const canalLogs = message.guild.channels.cache.get("1018375967837794375") // ID DO CANAL DE LOGS
 
     if (message.author.bot) return;
 
@@ -80,7 +80,7 @@ client.on('messageDelete', async (message) => {
 
     const embed_delete = new Discord.EmbedBuilder()
         .setTimestamp()
-        .setColor("Red") // A COR DO SEU SERVER ( Em ingles e com a inicial maiuscula e o retante minusculo)
+        .setColor("Blue") // A COR DO SEU SERVER ( Em ingles e com a inicial maiuscula e o retante minusculo)
         .setTitle(`🗑 **MENSAGEM DELETADA**`)
         .setThumbnail(message.author.displayAvatarURL({ dynamic: true }))
         .addFields({ name: `MENSAGEM DELETADA NO CANAL`, value: `${canaldelatado}`, inline: false, })
@@ -108,7 +108,7 @@ client.on('messageDelete', async (message) => {
               if (interaction.isSelectMenu()) {
                 if (choice === "cargos") {
               let embedCargos = new discord.EmbedBuilder()
-               .setColor('Random')
+               .setColor('Blue')
                .setTitle(`Os cargos que eu estou no momento são: `)
                .setDescription(`- ${server.roles.cache.sort
                 ((a, b) => b.position - a.position)
@@ -187,7 +187,7 @@ client.on("interactionCreate", (interaction) => {
           }).then( (ch) => {
             interaction.reply({ content: `✅ Olá ${interaction.user}, seu ticket foi aberto em ${ch}!`, ephemeral: true })
             let embed = new Discord.EmbedBuilder()
-            .setColor("Random")
+            .setColor("Blue")
             .setAuthor({
               name: `${interaction.guild.name} | Compras`,
               iconURL: interaction.guild.iconURL({ dynamic: true }),
@@ -251,7 +251,7 @@ client.on("interactionCreate", (interaction) => {
           }).then( (ch) => {
             interaction.reply({ content: `✅ Olá ${interaction.user}, seu ticket foi aberto em ${ch}!`, ephemeral: true })
             let embed = new Discord.EmbedBuilder()
-            .setColor("Random")
+            .setColor("Blue")
             .setAuthor({
               name: `${interaction.guild.name} | Suporte`,
               iconURL: interaction.guild.iconURL({ dynamic: true }),
@@ -315,7 +315,7 @@ client.on("interactionCreate", (interaction) => {
           }).then( (ch) => {
             interaction.reply({ content: `✅ Olá ${interaction.user}, seu ticket foi aberto em ${ch}!`, ephemeral: true })
             let embed = new Discord.EmbedBuilder()
-            .setColor("Random")
+            .setColor("Blue")
             .setAuthor({
               name: `${interaction.guild.name} | Parceria`,
               iconURL: interaction.guild.iconURL({ dynamic: true }),
@@ -360,7 +360,7 @@ client.on("interactionCreate", (interaction) => {
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     client.on('guildMemberAdd', async(member) => {
 
-        let canal = member.guild.channels.cache.get('1029445428166529115'); //Id do canal!
+        let canal = member.guild.channels.cache.get('1070589947532288040'); //Id do canal!
         if(!canal) return;
     
         let entrada = new Discord.EmbedBuilder()
@@ -368,18 +368,17 @@ client.on("interactionCreate", (interaction) => {
         .setTitle(`Sistema de bem vindo!`)
         .setDescription(`${member} *É o novo membro do servidor, seja muito bem vindo(a) em **${member.guild.name}**.*\n\nPequena curiosidade: Você é o membro **${member.guild.memberCount}** do servidor!`)
         .addFields({name: `Regras:`, value: `<#id do canal>`, inline: true},
-        {name: `Resgistre-se:`, value: `<#id do canal>`, inline: true},
-        {name: `Interaja Em:`, value: `<#id do canal>`})
+        )
         .setThumbnail(`${member.user.displayAvatarURL({ dynamic: true})}`)
         .setFooter({text: `${member.guild.name}`, iconURL: `${member.guild.iconURL({ dynamic: true})}`})
         .setTimestamp(new Date())
         //.setImage() // Você pode por uma imagem na embed!
     
         let b1 = new Discord.ButtonBuilder()
-        .setLabel(`AZ Shop`) //Coloque um nome para o botão 
-        .setEmoji(`🔗`)
+        .setLabel(`WEBSITE`) //Coloque um nome para o botão 
+        .setEmoji(`🌐`)
         .setStyle(5)
-        .setURL(``) //Coloque o link do botão
+        .setURL(`https://loja.marstore.repl.co/`) //Coloque o link do botão
     
         let b2 = new Discord.ActionRowBuilder().addComponents(b1)
     

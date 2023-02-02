@@ -40,11 +40,11 @@ module.exports = {
         if (!interaction.member.permissions.has('ManageMessages')) return interaction.reply({content: "Ixi, cade sua perm?"})
 
         const embed = new Discord.EmbedBuilder()
-        .setColor('Gold')
+        .setColor('Blue')
         .setTitle(`${title}`)
         .setDescription(`${desc}`)
         .setImage(`${image}`)
-        .setFooter({ text: `AZ SHOP | Todos os Direitos Reservados` })
+        .setFooter({ text: `MarSTORE | Todos os Direitos Reservados` })
         channel.send({ embeds: [embed] });
 
         interaction.reply({ content: `Anuncio postado no canal ${channel}` })

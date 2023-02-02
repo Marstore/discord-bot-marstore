@@ -130,11 +130,11 @@ module.exports = {
        .setDescription(`> **Descrição:** ${Descrição}\n> **Tempo:** ${Tempo}\n-----------\n*Para participar do Evento clique no botão abaixo com o emoji "🎉", para sair clique no botão "🤯"!*`)
        .setTimestamp()
        .setFooter({ text: '© Anaquim BOT - 2022', iconURL: 'https://cdn.discordapp.com/attachments/1010417254678147123/1051316840464400404/AnaquimNovo.png' })
-       .setColor('Random')
+       .setColor('Blue')
      
        const msg = await channelEvent.send({ embeds: [embedEvento], components: [botãoEvento] }).catch((e) => {
         interaction.reply({ embeds: [new Discord.EmbedBuilder()
-            .setColor("Random")
+            .setColor("Blue")
             .setFooter({ text: '© Anaquim BOT - 2022', iconURL: 'https://cdn.discordapp.com/attachments/1010417254678147123/1051316840464400404/AnaquimNovo.png' })
             .setDescription(`**<a:negado:1043486398063333437> - Não foi possível promover o evento!**`)
         ] });
@@ -164,7 +164,7 @@ module.exports = {
               ]});
               msg.channel.send({ embeds: [new Discord.EmbedBuilder()
                .setAuthor({ name: `Anfitrião: ${interaction.user.tag}`, iconURL: `${interaction.user.displayAvatarURL()}`})
-               .setColor('Random')
+               .setColor('Blue')
                .setTitle(`🎉 - Inscrições Encerradas! - 👋`)
                .setFooter({ text: '© Anaquim BOT - 2022', iconURL: 'https://cdn.discordapp.com/attachments/1010417254678147123/1051316840464400404/AnaquimNovo.png' })
                .setTimestamp()

@@ -11,7 +11,7 @@ module.exports = {
         interaction.reply({ content: `Você não possui permissão para utilzar este comando!`, ephemeral: true })
     } else {
         let embed = new Discord.EmbedBuilder()
-        .setColor("Random")
+        .setColor("Blue")
         .setAuthor({ name: interaction.guild.name, iconURL: interaction.guild.iconURL({ dynamic: true }) })
         .setDescription(`**Abra um ticket selecionando o botão abaixo para saber mais dos nossos produtos!
         <a:2353arrowrightglow:1029549941288353822>Horário de atendimento:
