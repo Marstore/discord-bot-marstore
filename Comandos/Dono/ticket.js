@@ -14,10 +14,11 @@ module.exports = {
         .setColor("Blue")
         .setAuthor({ name: interaction.guild.name, iconURL: interaction.guild.iconURL({ dynamic: true }) })
         .setDescription(`**Abra um ticket selecionando o botão abaixo para saber mais dos nossos produtos!
+        
         > ⏰ Horário de atendimento:
         > 24/7 
-        
         > Sempre aberto para te ajudar!
+        
         **`)
         .setImage(
             "https://media.discordapp.net/attachments/901945232529162250/1070566557375266836/BANNER-2-400X100.png"

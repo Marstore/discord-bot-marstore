@@ -359,10 +359,8 @@ client.on("interactionCreate", (interaction) => {
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     client.on('guildMemberAdd', async(member) => {
-
         let canal = member.guild.channels.cache.get('1070589947532288040'); //Id do canal!
         if(!canal) return;
-    
         let entrada = new Discord.EmbedBuilder()
         .setAuthor({name: `${member.user.tag}`, iconURL: `${member.user.displayAvatarURL({dynamic: true})}`})
         .setTitle(`Sistema de bem vindo!`)
